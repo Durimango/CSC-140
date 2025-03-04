@@ -1,7 +1,7 @@
 #include <iostream>
 
 //declaring variables
-int userInput;
+int userInput = 0;
 
 int main() {
 
