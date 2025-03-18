@@ -13,7 +13,7 @@ int main()
     std::cout << "Division: " << num1/num2 << '\n';
     std::cout << "Modulo: " << num1%num2 << '\n';
 
-    std:: system("pause>0");
+    std::system("pause>0");
 
     return 0;
 }
