@@ -13,6 +13,8 @@ int main(){
     for (int i = userNumber; i > 0; i-- ) {
         std::cout << i << "\n";
     }
-
+    
+    std::cout << "Blast off!";
+    
     std::system("pause>0");
 }
