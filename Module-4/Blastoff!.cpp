@@ -1,13 +1,18 @@
 #include <iostream>
 
+//declaring variables
+int userNumber = 0;
+
 int main(){
 
-    int userNumber = 0;
-
+    //display a message and take user input
     std::cout << "Count down in T minus: ";
     std::cin >> userNumber;
 
-    for (int i = 0; ) {
-
+    //for loop logic counting down from the user input
+    for (int i = userNumber; i > 0; i-- ) {
+        std::cout << i << "\n";
     }
+
+    std::system("pause>0");
 }
