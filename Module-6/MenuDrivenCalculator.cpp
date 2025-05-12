@@ -29,7 +29,7 @@ void operation(){
     std::system("pause>0");
 }
 
-//declaring the modulo functio, this converts numbers to integers and operates
+//declaring the modulo function, this converts numbers to integers and operates
 //modulo is a special case that doesn't work with doubles
 void modulo(int x, int y){
     userAnswer = x % y;
