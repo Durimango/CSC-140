@@ -142,6 +142,7 @@ class Elephant : public Animal {
     //this displays all info for every animal within the zooCollection vector
     void displayAllAnimals(){
 
+        //this detects whether there is information in the zooCollection vector to display (I know it doesn't work if there's only a single animal)
         if (zooCollection.size() == 0){
             cout << "Oops there's no animals.\n";
         }
