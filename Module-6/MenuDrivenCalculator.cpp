@@ -29,6 +29,27 @@ void operation(){
     std::system("pause>0");
 }
 
+//declaring all math functions
+double addition(double x, double y){
+    userAnswer = x + y;
+    return userAnswer;
+}
+
+double subtraction(double x, double y){
+    userAnswer = x - y;
+    return userAnswer;
+}
+
+double multiplication(double x, double y){
+    userAnswer = x * y;
+    return userAnswer;
+}
+
+double division(double x, double y){
+    userAnswer = x / y;
+    return userAnswer;
+}
+
 //declaring the modulo function, this converts numbers to integers and operates
 //modulo is a special case that doesn't work with doubles
 void modulo(int x, int y){
@@ -47,21 +68,21 @@ int main(){
                 //addition
                 case 1:
                     userInput();
-                    userAnswer = userNumber1 + userNumber2;
+                    addition(userNumber1, userNumber2);
                     operation();
                     break;
 
                 //subtraction
                 case 2:
                     userInput();
-                    userAnswer = userNumber1 - userNumber2;
+                    subtraction(userNumber1, userNumber2);
                     operation();
                     break;
                 
                 //multiplication
                 case 3:
                     userInput();
-                    userAnswer = userNumber1 * userNumber2;
+                    multiplication(userNumber1, userNumber2);
                     operation();
                     break;
 
@@ -70,7 +91,7 @@ int main(){
                     userInput();
                     //if the user tries to divide by 0 it asks them to try again
                     if (userNumber2 != 0) {
-                        userAnswer = userNumber1 / userNumber2;
+                        division(userNumber1, userNumber2);
                         operation();
                     } else {
                         std::cout << "You cannot divide by 0, try again." << '\n';
